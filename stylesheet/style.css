@@ -39,7 +39,6 @@ img {
 
 .select-btn a {
     text-decoration: none;
-    color: var(--bg-dark);
 }
 
 .btn-2 {
@@ -105,6 +104,7 @@ svg.w-6.h-6 {
 
 .header-content .btn {
     display: inline-flex;
+    text-decoration: none;
 }
 
 
@@ -212,6 +212,15 @@ hr {
     justify-content: space-between;
 }
 
+/* match page css */
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    padding: 50px 30px; 
+}
 
 /* responsive tablet */
 @media only screen and (max-width:992px) {
