@@ -12,7 +12,7 @@ img {
 
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 60px auto;
 }
 
 :root {
@@ -28,8 +28,8 @@ img {
     color: var(--text-white);
     font-size: var(---pra-font);
     border-radius: 5px;
+    border: none;
 }
-
 
 /* header-section css */
 .header-section {
@@ -39,7 +39,6 @@ img {
     margin: 40px auto;
     display: flex;
     align-items: center;
-
 }
 
 .header-content {
@@ -66,10 +65,71 @@ img {
     margin-bottom: 30px;
 }
 
-svg#right-icon {
+svg.w-6.h-6 {
     width: 24px;
 }
-
 .header-content .btn {
     display: flex;
+}
+
+
+/* blog-section css */
+.select-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1/4;
+    background-color: var(--bg-dark);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.all-blogs {
+    grid-column: 4/-1;
+}
+
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:265px 1fr;
+    gap: 24px;
+}
+
+.blog{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    gap: 24px;
+}
+
+.blog-content{
+    padding: 20px;
+}
+
+.blog-content p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.blog-icon{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+    color: #16161683;
+}
+.blog-content button{
+    padding: 4px 16px;
+    border-radius: 5px;
+    background-color: var(--text-white);
+    border: 1px solid black;
+    font-weight: bold;
 }
