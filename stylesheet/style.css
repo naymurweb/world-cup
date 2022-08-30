@@ -25,11 +25,42 @@ img {
 .btn {
     padding: 16px 25px;
     background-color: var(--btn-color);
-    color: var(--text-white);
+    color: white;
     font-size: var(---pra-font);
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
 }
+
+.btn:hover {
+    background-color: #1C8D73;
+}
+
+.select-btn a {
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+
+.btn-2 {
+    padding: 16px 25px;
+    background-color: #FFFFFF;
+    color: var(--bg-dark);
+    font-size: var(---pra-font);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    font-weight: 500;
+}
+
+.btn-2:hover {
+    color: white;
+    background-color: #1C8D73;
+
+}
+
+
 
 /* header-section css */
 .header-section {
@@ -241,11 +272,13 @@ hr {
     .header-image {
         width: 100%;
     }
+
     .header-image img {
         width: 60%;
     }
+
     .select-btn {
-        display:flex;
+        display: flex;
         flex-direction: column;
         gap: 20px;
         grid-column: 1/-1;
@@ -254,13 +287,21 @@ hr {
         height: fit-content;
         border-radius: 10px;
     }
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .last-btn {
         display: none;
     }
-    .footer-section{
+
+    .footer-section {
         padding: 40px;
+    }
+
+    .footer-content p {
+
+        font-size: 12px;
     }
 }
