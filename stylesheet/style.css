@@ -183,10 +183,10 @@ hr {
 
 
 /* responsive tablet */
-@media only screen and (max-width:932px) {
+@media only screen and (max-width:992px) {
 
     .container {
-        max-width: 992px;
+        max-width: 768px;
     }
 
     .header-content h1 {
@@ -225,7 +225,7 @@ hr {
 /* responsive mobile */
 @media only screen and (max-width:588px) {
     .container {
-        max-width: 576px;
+        max-width: 325px;
     }
 
     .header-section {
